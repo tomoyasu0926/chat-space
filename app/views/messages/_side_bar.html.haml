@@ -5,7 +5,7 @@
         = current_user.name
       %ul.SideBarHeader__iconList
         %li.SideBarHeader__Icon
-          = link_to '#' do
+          = link_to new_group_path do
             = icon('fas', 'edit')
         %li.SideBarHeader__Icon
           = link_to edit_user_path(current_user) do
