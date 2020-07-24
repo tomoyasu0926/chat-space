@@ -17,3 +17,10 @@
           グループ名
         .Group__message
           最新のメッセージ
+    - current_user.groups.each do |group|
+      .Group
+        = link_to '#' do
+          .Group__name
+            = group.name
+          .Group__message
+            メッセージはまだありません
